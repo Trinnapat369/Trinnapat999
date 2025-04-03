@@ -1,4 +1,10 @@
 import Image from 'next/image'
+import { Bungee_Tint } from "next/font/google";
+
+const bungee = Bungee_Tint({ 
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function MyApp() {
   return (<div 
@@ -14,7 +20,7 @@ export default function MyApp() {
 
       flex flexwrap */}
 
-    <h1 className="text-2xl font-bold m-2 p-2">Hello world!!</h1>
+    <h1 className={`${bungee.className} "text-4xl font-bold m-2 p-2"`}>Hello world!!</h1>
 
     <Image
       className='p-2 m-4'

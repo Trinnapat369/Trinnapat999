@@ -48,6 +48,12 @@ export default function MyApp() {
         Lorem idivsum, dolor sit amet consectetur adipisicing elit. Doloribus, consequuntur.
       </div>
     </div>
+    <Link 
+        className='text-blue-600 block border-2 border-black p-2 m-2 w-fit mb-8'
+        href="/Foo" 
+        >
+          Go to Foo Page
+      </Link>
 
   </div>)
 }
